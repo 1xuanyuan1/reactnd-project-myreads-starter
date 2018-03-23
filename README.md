@@ -90,3 +90,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
+# 说明
+
+## 遇到的第一个坑 —— 列表渲染之后一直不出来内容
+
+最开始使用的是 forEach, 一直没有把内容渲染出来。
+
+解决办法 改写成 map。forEach是无返回的，所以一直没有内容。而map是有返回的
+
+
+## 对目录做了一些优化
+
+> pages  页面都在这里
+> components 把书籍单独拿出来做了一个组件，可在首页以及搜索页复用 
