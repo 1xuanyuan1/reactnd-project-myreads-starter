@@ -6,7 +6,7 @@ class Book extends Component {
       <li>
         <div className="book">
           <div className="book-top">
-            <div className="book-cover" style={{ width: 128, height: 188, backgroundImage: `url("${this.props.data.imageLinks.thumbnail}")` }}></div>
+            <div className="book-cover" style={{ width: 128, height: 188, backgroundImage: `url("${this.props.data.imageLinks ? this.props.data.imageLinks.thumbnail : ''}")` }}></div>
             <div className="book-shelf-changer">
               <select value={this.props.data.shelf || 'none'} onChange={this.props.onChangeShelf}>
                 <option value="" disabled>Move to...</option>
